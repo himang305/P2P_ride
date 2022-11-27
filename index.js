@@ -439,6 +439,7 @@ async function checkKyc(_address) {
             $('#text08').text(result[0]);
             $('#text09').text("Connected");
             $('#text99').text("Onchain KYC Verified");
+            setTimeout( profile_view(), 5000);
         } else {
             $('#text02').html("")
             $('#text08').text("");
